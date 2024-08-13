@@ -1,0 +1,39 @@
+{
+  "type": "module",
+  "name": "eslint-plugin-no-devtool",
+  "version": "1.0.0",
+  "description": "An ESLint plugin to disallow the usage of DevTool component in production code.",
+  "main": "./dist/eslint-plugin-no-devtool.cjs",
+  "scripts": {
+    "build": "bun build.js",
+    "test": "bun ./src/test/no-devtool.test.ts",
+    "eslint": "eslint -c ./eslint.config.mjs ."
+  },
+  "files": [
+    "dist/"
+  ],
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "devtool",
+    "react",
+    "lint"
+  ],
+  "author": "Kevin Bourbasquet <contact@bourbasquetkev.in>",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.0.1",
+    "@typescript-eslint/parser": "^8.0.1",
+    "esbuild": "^0.23.0",
+    "eslint": "^9.9.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4",
+    "@hookform/devtools": "^4.3.1",
+    "@types/react": "^18.3.3",
+    "react": "^18.3.1",
+    "react-hook-form": "^7.52.2"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  }
+}
